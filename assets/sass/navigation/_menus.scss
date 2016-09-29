@@ -25,19 +25,27 @@
 		padding-left: 0;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			// box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			background-color: $color-red;
 			float: left;
 			position: absolute;
-			top: 1.5em;
+			top: 3em;
 			left: -999em;
 			z-index: 99999;
+			border: 1px solid $color-red;
 
 			ul {
 				left: -999em;
 				top: 0;
+
 			}
 
 			li {
+				text-align: left;
+				line-height: 1.5;
+				margin: 0;
+				font-size: 16px;
+
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -45,11 +53,15 @@
 			}
 
 			a {
-				width: 200px;
+				width: 250px;
+				padding: 10px 10px ;
+				color: #fff;
 			}
 
 			:hover > a,
 			.focus > a {
+				color: $color-red;
+				background-color: #fff;
 			}
 
 			a:hover,

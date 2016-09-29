@@ -75,18 +75,18 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
-  margin: 0 0 60px;
-  background: #ffffff;
-  border: 4px solid #ffffff;
+  // margin: 0 0 60px;
+  // background: #ffffff;
+  // border: 4px solid #ffffff;
   position: relative;
   zoom: 1;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  // -webkit-border-radius: 4px;
+  // -moz-border-radius: 4px;
+  // border-radius: 4px;
+  // -webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  // -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  // -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  // box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .flexslider .slides {
   zoom: 1;
@@ -105,11 +105,12 @@ html[xmlns] .flexslider .slides {
 .loading .flex-viewport {
   max-height: 300px;
 }
-.carousel li {
-  margin-right: 5px;
-}
+// .carousel li {
+//   margin-right: 5px;
+// }
 .flex-direction-nav {
   *height: 0;
+  display: none;
 }
 .flex-direction-nav a {
   text-decoration: none;
@@ -130,6 +131,7 @@ html[xmlns] .flexslider .slides {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  
 }
 .flex-direction-nav a:before {
   font-family: "flexslider-icon";
@@ -198,6 +200,7 @@ html[xmlns] .flexslider .slides {
   position: absolute;
   bottom: -40px;
   text-align: center;
+  display: none;
 }
 .flex-control-nav li {
   margin: 0 6px;
@@ -206,6 +209,7 @@ html[xmlns] .flexslider .slides {
   *display: inline;
 }
 .flex-control-paging li a {
+  display: none;
   width: 11px;
   height: 11px;
   display: block;

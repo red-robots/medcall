@@ -12,17 +12,41 @@
  * @package ACStarter
  */
 
-get_header(); ?>
+get_header(); 
+
+if ( has_post_thumbnail() ) {
+    $pageClass = 'content-area';
+} else {
+	$pageClass = 'content-area-full';
+}
+?>
+<div id="page">
+
+<div class="page-title">
+	<div class="wrapper">
+		<header class="entry-header">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</header><!-- .entry-header -->
+	</div>
+</div>
+
 <div class="wrapper">
-	<div id="primary" class="content-area">
+
+
+
+	<div id="primary" class="<?php echo $pageClass; ?>">
 		<main id="main" class="site-main" role="main">
 
 			<?php
-			while ( have_posts() ) : the_post();
+			while ( have_posts() ) : the_post(); ?>
 
-				get_template_part( 'template-parts/content', 'page' );
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<div class="entry-content">
+						<?php the_content(); ?>
+					</div><!-- .entry-content -->
+				</article><!-- #post-## -->
 
-				if( is_page('sitemap') ) {
+				<?php if( is_page('sitemap') ) {
 					wp_nav_menu( array( 'theme_location' => 'sitemap' ) );
 				}
 
@@ -31,7 +55,15 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<?php
+	if ( has_post_thumbnail() ) { ?>
+		<aside id="secondary" class="widget-area" role="complementary">
+			<?php the_post_thumbnail('full') ?>
+		</aside>
+
+	<?php } ?>
 </div>
-<?php
-// get_sidebar();
+</div><!-- page -->
+
+<?php 
 get_footer();

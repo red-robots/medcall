@@ -21,7 +21,8 @@ get_header(); ?>
 			$post = get_post(2); 
 			setup_postdata( $post );
 
-				$hero = get_field('hero_image');
+				// $hero = get_field('hero_image');
+				$heros = get_field('hero_images');
 				$bottom_image = get_field('background_image');
 				$title = get_field('title');
 				$subtitle = get_field('subtitle');
@@ -41,19 +42,25 @@ get_header(); ?>
 			wp_reset_postdata(); ?>
 
 			<section class="hero home-section">
-				<?php 
-						if( $hero ) {
-							echo wp_get_attachment_image( $hero, $size );
-						} ?>
+				<div class="flexslider">
+					<ul class="slides">
+						<?php foreach( $heros as $image ): ?>
+							<li>
+								<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+							</li>
+						<?php endforeach; ?>
+					</ul>
+				</div>
+					
 
-						<div class="info-box top-box">
-							<h2><?php echo $title; ?></h2>
-							<h3><?php echo $subtitle; ?></h3>
-							<p><?php echo $text; ?></p>
-							<div class="red-button">
-								<a href="<?php echo $learnmore_link; ?>">LEARN MORE</a>
-							</div>
-						</div><!-- info box -->
+				<div class="info-box top-box">
+					<h2><?php echo $title; ?></h2>
+					<h3><?php echo $subtitle; ?></h3>
+					<p><?php echo $text; ?></p>
+					<div class="red-button">
+						<a href="<?php echo $learnmore_link; ?>">LEARN MORE</a>
+					</div>
+				</div><!-- info box -->
 			</section><!-- hero -->
 
 			<section class="help">	
@@ -61,13 +68,13 @@ get_header(); ?>
 					<h2><?php echo $title_help; ?></h2>
 					<p><?php echo $text_help; ?></p>
 					<div class="out-link">
-						<a href="<?php echo $healthcare_link; ?>">MedCall <span class="red">Healthcare</span></a>
-					</div>
-					<div class="out-link">
-						<a href="<?php echo $assist_link; ?>">MedCall <span class="red">Assist</span></a>
-					</div>
-					<div class="out-link">
 						<a href="<?php echo $offshore_link; ?>">MedCall <span class="red">Offshore</span></a>
+					</div>
+					<div class="out-link">
+						<a href="<?php echo $assist_link; ?>">MedCall <span class="red">Comp</span></a>
+					</div>
+					<div class="out-link">
+						<a href="<?php echo $healthcare_link; ?>">MedCall <span class="red">Healthcare</span></a>
 					</div>
 				</div><!-- small wrapper -->
 			</section><!-- help -->
