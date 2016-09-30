@@ -20,7 +20,7 @@ if ( has_post_thumbnail() ) {
 	$pageClass = 'content-area-full';
 }
 ?>
-<div id="page">
+<div id="page-contents">
 
 <div class="page-title">
 	<div class="wrapper">

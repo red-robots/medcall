@@ -67,14 +67,17 @@ get_header(); ?>
 				<div class="small-wrapper">
 					<h2><?php echo $title_help; ?></h2>
 					<p><?php echo $text_help; ?></p>
-					<div class="out-link">
-						<a href="<?php echo $offshore_link; ?>">MedCall <span class="red">Offshore</span></a>
+					<div class="out-link offshore">
+						<!-- <a href="<?php echo $offshore_link; ?>">MedCall <span class="red">Offshore</span></a> -->
+						<a href="<?php echo $offshore_link; ?>">MedCall Offshore</a>
 					</div>
-					<div class="out-link">
-						<a href="<?php echo $assist_link; ?>">MedCall <span class="red">Comp</span></a>
+					<div class="out-link comp">
+						<!-- <a href="<?php echo $assist_link; ?>">MedCall <span class="red">Comp</span></a> -->
+						<a href="<?php echo $assist_link; ?>">MedCall Comp</a>
 					</div>
-					<div class="out-link">
-						<a href="<?php echo $healthcare_link; ?>">MedCall <span class="red">Healthcare</span></a>
+					<div class="out-link healthcare">
+						<!-- <a href="<?php echo $healthcare_link; ?>">MedCall <span class="red">Healthcare</span></a> -->
+						<a href="<?php echo $healthcare_link; ?>">MedCall Healthcare</a>
 					</div>
 				</div><!-- small wrapper -->
 			</section><!-- help -->

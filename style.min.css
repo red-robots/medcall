@@ -1395,12 +1395,12 @@ div{-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}
 .widget-area{width:100%;margin:0 auto}
 @media screen and (min-width:600px){.widget-area{width:26%;float:left;margin:0}
 }@media screen and (min-width:1200px){}
-#page{margin:50px 0 0 0;min-height:600px;width:100%;float:left}
-.logo,h1.logo{width:229px;height:74px;background-image:url(images/logo.png);background-repeat:no-repeat;background-size:cover;margin:10px auto}
-@media screen and (min-width:600px){.logo,h1.logo{width:229px;height:74px;float:left;margin:0}
+#page-contents{margin:50px 0 0 0;min-height:600px;width:100%;float:left}
+.logo,h1.logo{width:229px;height:95px;background-image:url(images/logo-new.png);background-repeat:no-repeat;background-size:cover;margin:10px auto}
+@media screen and (min-width:600px){.logo,h1.logo{width:229px;height:95px;float:left;margin:0}
 }@media screen and (min-width:1200px){}
-.logo a,h1.logo a{width:229px;height:74px;display:block;text-indent:-9000px}
-@media screen and (min-width:600px){.logo a,h1.logo a{width:229px;height:74px}
+.logo a,h1.logo a{width:229px;height:95px;display:block;text-indent:-9000px}
+@media screen and (min-width:600px){.logo a,h1.logo a{width:229px;height:95px}
 }@media screen and (min-width:1200px){}
 header.site-header{width:100%;padding:20px 0;float:left}
 .small-wrapper{width:80%;margin:0 auto}
@@ -1430,6 +1430,10 @@ section.help p{margin:0 0 5px 0}
 @media screen and (min-width:600px){.out-link{width:29%;margin:2%;float:left}
 }.out-link a{background-image:url(images/watermark.png);background-repeat:no-repeat;background-position:center center;background-color:#fff;text-decoration:none;text-align:center;color:#000;padding:30% 0;display:block;-webkit-transition:all .3s ease;transition:all .3s ease;box-shadow:0 0 8px 1px rgba(0,0,0,0.2)}
 .out-link a:hover{box-shadow:0 0 11px 1px rgba(0,0,0,0.4)}
+.out-link.offshore a,.out-link.healthcare a,.out-link.comp a{background-repeat:no-repeat;background-position:center center;background-size:contain;text-indent:-9000px}
+.out-link.offshore a{background-image:url(images/offshore.png)}
+.out-link.healthcare a{background-image:url(images/healthcare.png)}
+.out-link.comp a{background-image:url(images/comp.png)}
 .bottom-box,.top-box{width:90%;margin:10px auto;position:relative}
 @media screen and (min-width:600px){.bottom-box,.top-box{width:auto;position:absolute}
 }@media screen and (min-width:1200px){.bottom-box,.top-box{width:33%}

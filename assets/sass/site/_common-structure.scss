@@ -73,7 +73,7 @@ div {
 		/*width: 1200px;*/
 	}
 }
-#page {
+#page-contents {
 	margin: 50px 0 0 0;
 	min-height: 600px;
 	width: 100%;
@@ -82,9 +82,9 @@ div {
 /* Logo */
 .logo , h1.logo {
 	width: 229px;
-	height: 74px;
+	height: 95px;
 	background: {
-		image: url(images/logo.png);	
+		image: url(images/logo-new.png);	
 		repeat: no-repeat;
 		size: cover;
 	}
@@ -92,7 +92,7 @@ div {
 
 	@media screen and (min-width: $tabwidth) {
 		width: 229px;
-		height: 74px;
+		height: 95px;
 		float: left;
 		margin: 0;
 	}
@@ -102,13 +102,13 @@ div {
 }
 .logo a, h1.logo a {
 	width: 229px;
-	height: 74px;
+	height: 95px;
 	display: block;
 	text-indent: -9000px;
 
 	@media screen and (min-width: $tabwidth) {
 		width: 229px;
-		height: 74px;
+		height: 95px;
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/
