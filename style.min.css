@@ -1262,7 +1262,7 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input
 select{border:1px solid #ccc}
 input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"]{padding:3px}
 textarea{padding-left:3px;width:100%}
-a{color:#0999f3}
+a{color:#a83135}
 a:hover,a:focus,a:active{color:midnightblue}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
@@ -1383,7 +1383,7 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
-div{-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}
+div{-ms-hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;hyphens:none}
 .clear{clear:both}
 .wrapper{width:100%;margin:0 auto;padding:20px}
 @media screen and (min-width:600px){.wrapper{width:100%}
@@ -1395,7 +1395,7 @@ div{-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}
 .widget-area{width:100%;margin:0 auto}
 @media screen and (min-width:600px){.widget-area{width:26%;float:left;margin:0}
 }@media screen and (min-width:1200px){}
-#page-contents{margin:50px 0 0 0;min-height:600px;width:100%;float:left}
+#page-contents{margin:0;min-height:600px;width:100%;float:left}
 .logo,h1.logo{width:229px;height:95px;background-image:url(images/logo-new.png);background-repeat:no-repeat;background-size:cover;margin:10px auto}
 @media screen and (min-width:600px){.logo,h1.logo{width:229px;height:95px;float:left;margin:0}
 }@media screen and (min-width:1200px){}
