@@ -1266,18 +1266,22 @@ a{color:#a83135}
 a:hover,a:focus,a:active{color:midnightblue}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
-.main-navigation{clear:both;display:block;float:left;width:100%;text-align:center}
-@media screen and (min-width:600px){.main-navigation{width:auto;display:inline-block;float:right;text-align:right;clear:none;margin:20px 0 0 0}
-}.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}
-.main-navigation ul ul{background-color:#a83135;float:left;position:absolute;top:3em;left:-999em;z-index:99999;border:1px solid #a83135}
-.main-navigation ul ul ul{left:-999em;top:0}
-.main-navigation ul ul li{text-align:left;line-height:1.5;margin:0;font-size:16px}
-.main-navigation ul ul li:hover>ul,.main-navigation ul ul li.focus>ul{left:100%}
-.main-navigation ul ul a{width:250px;padding:10px 10px;color:#fff}
-.main-navigation ul ul :hover>a,.main-navigation ul ul .focus>a{color:#a83135;background-color:#fff}
+.mobile-center{text-align:center}
+.main-navigation{clear:both;display:block;width:100%;text-align:center}
+@media screen and (min-width:600px){.main-navigation{width:auto;display:inline-block;clear:none;margin:20px auto 0 auto}
+}@media screen and (min-width:810px){.main-navigation{float:left;float:right;text-align:right;margin:20px 0 0 0}
+}.main-navigation ul{list-style:none;display:none;margin:0;padding-left:0;background-color:#eee;overflow:hidden}
+@media screen and (min-width:600px){.main-navigation ul{background-color:transparent;float:left;overflow:visible}
+}@media screen and (min-width:600px){.main-navigation ul ul{background-color:#a83135;float:left;position:absolute;top:3em;left:-999em;z-index:99999;border:1px solid #a83135}
+}.main-navigation ul ul ul{left:-999em;top:0}
+.main-navigation ul ul li{line-height:1.5;margin:0 0 5px 0;font-size:14px;border-bottom:0}
+@media screen and (min-width:600px){.main-navigation ul ul li{font-size:16px;text-align:left;margin:0}
+}.main-navigation ul ul li:hover>ul,.main-navigation ul ul li.focus>ul{left:100%}
+@media screen and (min-width:600px){.main-navigation ul ul a{width:250px;padding:10px 10px;color:#fff}
+}.main-navigation ul ul :hover>a,.main-navigation ul ul .focus>a{color:#a83135;background-color:#fff}
 .main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
-.main-navigation li{float:left;position:relative;width:100%;margin:10px 0;line-height:3;font-family:"Karla",sans-serif;font-size:18px;font-weight:bold}
-@media screen and (min-width:600px){.main-navigation li{width:auto;margin:0 10px;font-size:18px}
+.main-navigation li{float:left;position:relative;width:100%;margin:0;line-height:3;border-bottom:3px solid #fff;font-family:"Karla",sans-serif;font-size:20px;font-weight:bold}
+@media screen and (min-width:600px){.main-navigation li{width:auto;margin:0 10px;font-size:18px;border-bottom:0}
 }@media screen and (min-width:1200px){.main-navigation li{font-size:18px}
 }.main-navigation li:hover>a,.main-navigation li.focus>a{color:#a83135}
 .main-navigation a{display:block;text-decoration:none;color:#000;text-decoration:none;-webkit-transition:all .3s ease;transition:all .3s ease}
@@ -1396,11 +1400,11 @@ div{-ms-hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;hyphens:none}
 @media screen and (min-width:600px){.widget-area{width:26%;float:left;margin:0}
 }@media screen and (min-width:1200px){}
 #page-contents{margin:0;min-height:600px;width:100%;float:left}
-.logo,h1.logo{width:229px;height:95px;background-image:url(images/logo-new.png);background-repeat:no-repeat;background-size:cover;margin:10px auto}
-@media screen and (min-width:600px){.logo,h1.logo{width:229px;height:95px;float:left;margin:0}
+.logo,h1.logo{width:230px;height:97px;background-image:url(images/logo-new.png);background-repeat:no-repeat;background-size:cover;margin:10px auto}
+@media screen and (min-width:810px){.logo,h1.logo{width:230px;height:97px;float:left;margin:0}
 }@media screen and (min-width:1200px){}
-.logo a,h1.logo a{width:229px;height:95px;display:block;text-indent:-9000px}
-@media screen and (min-width:600px){.logo a,h1.logo a{width:229px;height:95px}
+.logo a,h1.logo a{width:230px;height:97px;display:block;text-indent:-9000px}
+@media screen and (min-width:600px){.logo a,h1.logo a{width:230px;height:97px}
 }@media screen and (min-width:1200px){}
 header.site-header{width:100%;padding:20px 0;float:left}
 .small-wrapper{width:80%;margin:0 auto}
@@ -1422,20 +1426,25 @@ footer.site-footer section.creds{width:100%;clear:both;margin:10px auto 20px aut
 .page-links{clear:both;margin:0 0 1.5em}
 section.home-section{width:100%;position:relative;line-height:0;float:left}
 section.home-section img{width:100%}
-section.help{width:100%;position:relative;text-align:center;background-color:#ebebec;padding:50px 0;overflow:hidden;float:left}
+section.grey{background-color:#ebebec}
+section.bottom h2{margin:0 0 15px 0}
+@media screen and (min-width:600px){section.bottom h2{margin:0 0 5px 0}
+}section.bottom p{margin:0 0 15px 0}
+section.help{width:100%;position:relative;text-align:center;padding:80px 0;overflow:hidden;float:left}
 section.help img{width:100%}
-section.help h2{margin:0 0 5px 0}
-section.help p{margin:0 0 5px 0}
+section.help h2{margin:0 0 15px 0}
+@media screen and (min-width:600px){section.help h2{margin:0 0 5px 0}
+}section.help p{margin:0 0 15px 0}
 .out-link{width:100%;margin:0 0 30px 0}
 @media screen and (min-width:600px){.out-link{width:29%;margin:2%;float:left}
-}.out-link a{background-image:url(images/watermark.png);background-repeat:no-repeat;background-position:center center;background-color:#fff;text-decoration:none;text-align:center;color:#000;padding:30% 0;display:block;-webkit-transition:all .3s ease;transition:all .3s ease;box-shadow:0 0 8px 1px rgba(0,0,0,0.2)}
+}.out-link a{background-image:url(images/watermark.png);background-repeat:no-repeat;background-position:center center;background-color:#fff;text-decoration:none;text-align:center;color:#000;padding:40% 0;display:block;-webkit-transition:all .3s ease;transition:all .3s ease;box-shadow:0 0 8px 1px rgba(0,0,0,0.2)}
 .out-link a:hover{box-shadow:0 0 11px 1px rgba(0,0,0,0.4)}
 .out-link.offshore a,.out-link.healthcare a,.out-link.comp a{background-repeat:no-repeat;background-position:center center;background-size:contain;text-indent:-9000px}
 .out-link.offshore a{background-image:url(images/offshore.png)}
 .out-link.healthcare a{background-image:url(images/healthcare.png)}
 .out-link.comp a{background-image:url(images/comp.png)}
-.bottom-box,.top-box{width:90%;margin:10px auto;position:relative}
-@media screen and (min-width:600px){.bottom-box,.top-box{width:auto;position:absolute}
+.bottom-box,.top-box{width:90%;margin:10px auto;position:relative;padding:30px 0;text-align:center}
+@media screen and (min-width:600px){.bottom-box,.top-box{width:auto;position:absolute;padding:0;text-align:left}
 }@media screen and (min-width:1200px){.bottom-box,.top-box{width:33%}
 }@media screen and (min-width:600px){.top-box{top:3%;right:3%}
 }@media screen and (min-width:600px){.top-box{top:25%;right:10%}

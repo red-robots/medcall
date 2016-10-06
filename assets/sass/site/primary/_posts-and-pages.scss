@@ -41,15 +41,25 @@ section.home-section {
 section.hero {
 
 }
+section.grey {
+	background-color: $color-grey;
+}
 section.bottom {
-
+	h2 {
+		margin: 0 0 15px 0;
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 0 5px 0;
+		}
+	}
+	p {
+		margin: 0 0 15px 0;
+	}
 }
 section.help {
 	width: 100%;
 	position: relative;
 	text-align: center;
-	background-color: $color-grey;
-	padding: 50px 0;
+	padding: 80px 0;
 	overflow: hidden;
 	float: left;
 	img {
@@ -59,10 +69,13 @@ section.help {
 
 	}
 	h2 {
-		margin: 0 0 5px 0;
+		margin: 0 0 15px 0;
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 0 5px 0;
+		}
 	}
 	p {
-		margin: 0 0 5px 0;
+		margin: 0 0 15px 0;
 	}
 }
 .out-link {
@@ -83,7 +96,7 @@ section.help {
 		text-decoration: none;
 		text-align: center;
 		color: #000;
-		padding: 30% 0;
+		padding: 40% 0;
 		display: block;
 		@include transition(all .3s ease);
 		-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.2);
@@ -119,9 +132,13 @@ section.help {
 	width: 90%;
 	margin: 10px auto;
 	position: relative;
+	padding: 30px 0;
+	text-align: center;
 	@media screen and (min-width: $tabwidth) {
 		width: auto;
 		position: absolute;
+		padding: 0;
+		text-align: left;
 	}
 	@media screen and (min-width: $deskwidth) {
 		width: 33%;

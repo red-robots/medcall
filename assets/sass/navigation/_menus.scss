@@ -1,17 +1,23 @@
+.mobile-center {
+	text-align: center;
+}
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
+	
 	width: 100%;
 	text-align: center;
-
 
 	@media screen and (min-width: $tabwidth) {
 		width: auto;
 		display: inline-block;
+		clear: none;
+		margin: 20px auto 0 auto;
+	}
+	@media screen and (min-width: $smallwidth) {
+		float: left;
 		float: right;
 		text-align: right;
-		clear: none;
 		margin: 20px 0 0 0;
 	}
 	@media screen and (min-width: $deskwidth) {
@@ -19,20 +25,31 @@
 	}
 
 	ul {
-		display: none;
 		list-style: none;
+		display: none;
 		margin: 0;
 		padding-left: 0;
+		background-color: #eee;
+		overflow: hidden;
+		@media screen and (min-width: $tabwidth) {
+			background-color: rgba(0,0,0,0);
+			float: left;
+			overflow: visible;
+		}
 
 		ul {
-			// box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			background-color: $color-red;
-			float: left;
-			position: absolute;
-			top: 3em;
-			left: -999em;
-			z-index: 99999;
-			border: 1px solid $color-red;
+			
+			
+
+			@media screen and (min-width: $tabwidth) {
+				background-color: $color-red;
+				float: left;
+				position: absolute;
+				top: 3em;
+				left: -999em;
+				z-index: 99999;
+				border: 1px solid $color-red;
+			}
 
 			ul {
 				left: -999em;
@@ -41,10 +58,17 @@
 			}
 
 			li {
-				text-align: left;
+				
 				line-height: 1.5;
-				margin: 0;
-				font-size: 16px;
+				margin: 0 0 5px 0;
+				font-size: 14px;
+				border-bottom: 0;
+
+				@media screen and (min-width: $tabwidth) {
+					font-size: 16px;
+					text-align: left;
+					margin: 0;
+				}
 
 				&:hover > ul,
 				&.focus > ul {
@@ -53,9 +77,12 @@
 			}
 
 			a {
-				width: 250px;
-				padding: 10px 10px ;
-				color: #fff;
+				@media screen and (min-width: $tabwidth) {
+					width: 250px;
+					padding: 10px 10px ;
+					color: #fff;
+				}
+				
 			}
 
 			:hover > a,
@@ -78,17 +105,19 @@
 		float: left;
 		position: relative;
 		width: 100%;
-		margin: 10px 0;
+		margin: 0px 0;
 		line-height: 3;
+		border-bottom: 3px solid #fff;
 		font: {
 			family: $font__heading;
-			size: 18px;
+			size: 20px;
 			weight: bold;
 		}
 		@media screen and (min-width: $tabwidth) {
 			width: auto;
 			margin: 0 10px;
 			font-size: 18px;
+			border-bottom: 0;
 		}
 		@media screen and (min-width: $deskwidth) {
 			font-size: 18px;
