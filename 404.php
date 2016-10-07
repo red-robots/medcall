@@ -9,13 +9,21 @@
 
 get_header(); ?>
 
+
+<div class="page-title">
+	<div class="wrapper">
+		<header class="entry-header">
+			<?php esc_html_e( '404 not found', 'acstarter' ); ?><
+		</header><!-- .entry-header -->
+	</div>
+</div>
+
+
 	<div id="primary" class="content-area-full">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( '404 not found', 'acstarter' ); ?></h1>
-				</header><!-- .page-header -->
+			
 
 				<div class="page-content">
 					
