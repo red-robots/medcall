@@ -13,7 +13,7 @@ get_header(); ?>
 <div class="page-title">
 	<div class="wrapper">
 		<header class="entry-header">
-			<?php esc_html_e( '404 not found', 'acstarter' ); ?><
+			<h1><?php esc_html_e( '404 not found', 'acstarter' ); ?></h1>
 		</header><!-- .entry-header -->
 	</div>
 </div>
