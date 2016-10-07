@@ -58,7 +58,23 @@ if ( has_post_thumbnail() ) {
 	<?php
 	if ( has_post_thumbnail() ) { ?>
 		<aside id="secondary" class="widget-area" role="complementary">
-			<?php the_post_thumbnail('full') ?>
+			<div class="side-image">
+				<?php the_post_thumbnail('full') ?>
+			</div>
+			<?php 
+
+			$images = get_field('extra_images');
+
+			if( $images ): ?>
+			    
+			        <?php foreach( $images as $image ): ?>
+			       		<div class="side-image">
+			                <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+			            </div>
+			          
+			        <?php endforeach; ?>
+			   
+			<?php endif; ?>
 		</aside>
 
 	<?php } ?>

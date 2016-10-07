@@ -19,7 +19,7 @@ $sitemap = get_field('sitemap_link', 'option');
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="wrapper">
 			<div class="site-info">
-				<?php echo $phone; ?> | <a href="<?php echo $spam; ?>"><?php echo $spam; ?></a>
+				<?php echo $phone; ?> | <a href="mailto:<?php echo $spam; ?>"><?php echo $spam; ?></a> | <a target="_blank" href="<?php the_field('privacy_policy', 'option'); ?>">Privacy Policy</a>
 			</div><!-- .site-info -->
 
 			<section class="creds">
