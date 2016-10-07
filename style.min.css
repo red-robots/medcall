@@ -1428,7 +1428,7 @@ footer.site-footer section.creds{width:100%;clear:both;margin:10px auto 20px aut
 .single .byline,.group-blog .byline{display:inline}
 .page-content,.entry-content,.entry-summary{margin:1.5em 0 0}
 .page-links{clear:both;margin:0 0 1.5em}
-section.home-section{width:100%;position:relative;line-height:0;float:left}
+section.home-section{width:100%;position:relative;line-height:0;float:left;border-top:2px solid #a83135}
 section.home-section img{width:100%}
 section.grey{background-color:#ebebec}
 section.bottom h2{margin:0 0 15px 0}
