@@ -135,33 +135,37 @@ section.help {
 	position: relative;
 	padding: 30px 0;
 	text-align: center;
+	background-color: rgba(255,255,255,.7);
 	@media screen and (min-width: $tabwidth) {
 		width: auto;
 		position: absolute;
-		padding: 0;
+		padding: 2%;
 		text-align: left;
+		width: 100%;
 	}
 	@media screen and (min-width: $deskwidth) {
 		width: 33%;
+		padding: 0;
+		background-color: rgba(255,255,255,0);
 	}
 }
 .top-box {
 	@media screen and (min-width: $tabwidth) {
-		top: 3%;
-		right: 3%;
+		top: 0%;
+		right: 0%;
 	}
-	@media screen and (min-width: $tabwidth) {
+	@media screen and (min-width: $deskwidth) {
 		top: 25%;
 		right: 10%;
 	}
 }
 .bottom-box {
 	@media screen and (min-width: $tabwidth) {
-		top: 3%;
-		left: 3%;
+		top: 0%;
+		left: 0%;
 	}
-	@media screen and (min-width: $tabwidth) {
-		top: 25%;
+	@media screen and (min-width: $deskwidth) {
+		top: 5%;
 		left: 10%;
 	}
 }
@@ -177,7 +181,7 @@ section.help {
 		margin: 0 0 5px 0;
 		text-transform: uppercase;
 		@media screen and (min-width: $tabwidth) {
-			font-size: 26px;
+			font-size: 18px;
 		}
 		@media screen and (min-width: $deskwidth) {
 			font-size: 28px;
@@ -208,7 +212,7 @@ section.help {
 		line-height: 1.2;
 		margin: 0 0 10px 0;
 		@media screen and (min-width: $tabwidth) {
-			font-size: 16px;
+			font-size: 14px;
 		}
 		@media screen and (min-width: $deskwidth) {
 			font-size: 18px;

@@ -23,13 +23,15 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-			
+				<div class="wrapper">
 
 				<div class="page-content">
 					
-
+					<h2>Sitemap</h2>
+				<?php wp_nav_menu( array( 'theme_location' => 'sitemap' ) ); ?>
 
 				</div><!-- .page-content -->
+				</div>
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
