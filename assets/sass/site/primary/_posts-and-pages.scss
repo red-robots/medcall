@@ -229,3 +229,100 @@ section.help {
 		width: 100%;
 	}
 }
+section.testimonials {
+	width: 100%;
+	float: left;
+	margin: 30px 0;
+	padding: 30px 0;
+	text-align: center;
+
+	h2 {
+
+	}
+
+	.testi-wrap {
+		width: 100%;
+		margin: 0 auto 40px auto;
+
+		@media screen and (min-width: $tabwidth) {
+			width: 90%;
+		}
+		@media screen and (min-width: $deskwidth) {
+			width: 60%;
+		}
+	}
+
+	.testimonial {
+		width: 100%;
+		p {
+			font: {
+				size: 24px;
+			}
+		}
+		
+	}
+	.signed {
+		width: auto;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 20px 0 0 0;
+		border-top: 1px solid #ccc;
+		font: {
+			size: 18px;
+		}
+	}
+}
+section.page-testimonials {
+	width: 100%;
+	float: left;
+	margin: 30px 0;
+	padding: 30px 0;
+	text-align: left;
+
+	h2 {
+
+	}
+
+	.testi-wrap {
+		width: 100%;
+		margin: 0 auto 40px auto;
+
+		@media screen and (min-width: $tabwidth) {
+			width: 90%;
+		}
+		@media screen and (min-width: $deskwidth) {
+			width: 60%;
+		}
+	}
+
+	.testimonial {
+		width: 100%;
+		background-color: rgba(0,0,0,.05);
+		border-radius: 10px;
+		padding: 2%;
+		margin-bottom: 15px;
+
+		@media screen and (min-width: $tabwidth) {
+			width: 45%;
+		}
+		@media screen and (min-width: $deskwidth) {
+			width: 30%;
+		}
+		p {
+			font: {
+				size: 16px;
+			}
+		}
+		
+	}
+	.signed {
+		width: auto;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 20px 0 0 0;
+		border-top: 1px solid #ccc;
+		font: {
+			size: 18px;
+		}
+	}
+}

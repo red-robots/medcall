@@ -97,6 +97,42 @@ get_header(); ?>
 						</div><!-- info box -->
 			</section><!-- bottom -->
 
+			<?php
+			/*
+			*	Testimonials
+			*/
+				$wp_query = new WP_Query();
+				$wp_query->query(array(
+				'post_type'=>'testimonial',
+				'posts_per_page' => 5
+			));
+				if ($wp_query->have_posts()) : ?>
+    
+			<section class="testimonials">
+				<h2>Testimonials</h2>
+				<div class="testi-wrap">
+					<div class="flexslider">
+						<ul class="slides">
+							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+								<li>
+									<div class="testimonial">
+										<?php the_excerpt(); ?>
+										<div class="signed">
+											<?php the_title(); ?>
+										</div>
+									</div>
+								</li>
+							<?php endwhile; ?>
+						</ul>
+					</div><!-- slider -->	
+				</div><!-- wrap -->	
+				<div class="red-button">
+					<a href="<?php bloginfo('url'); ?>/testimonials">View All Testimonials</a>
+				</div>
+			</section>
+
+			<?php endif; ?>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
