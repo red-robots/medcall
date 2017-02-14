@@ -1476,9 +1476,9 @@ section.page-testimonials{width:100%;float:left;margin:30px 0;padding:30px 0;tex
 section.page-testimonials .testi-wrap{width:100%;margin:0 auto 40px auto}
 @media screen and (min-width:600px){section.page-testimonials .testi-wrap{width:90%}
 }@media screen and (min-width:1200px){section.page-testimonials .testi-wrap{width:60%}
-}section.page-testimonials .testimonial{width:100%;background-color:rgba(0,0,0,0.05);border-radius:10px;padding:2%;margin-bottom:15px}
+}section.page-testimonials .testimonial{width:100%;background-color:rgba(0,0,0,0.05);border-bottom:3px solid rgba(0,0,0,0.1);border-radius:10px;padding:2%;margin-bottom:40px}
 @media screen and (min-width:600px){section.page-testimonials .testimonial{width:45%}
-}@media screen and (min-width:1200px){section.page-testimonials .testimonial{width:30%}
+}@media screen and (min-width:1200px){section.page-testimonials .testimonial{width:31%}
 }section.page-testimonials .testimonial p{font-size:16px}
 section.page-testimonials .signed{width:auto;display:inline-block;margin:0 auto;padding:20px 0 0 0;border-top:1px solid #ccc;font-size:18px}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}

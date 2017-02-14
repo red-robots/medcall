@@ -298,15 +298,16 @@ section.page-testimonials {
 	.testimonial {
 		width: 100%;
 		background-color: rgba(0,0,0,.05);
+		border-bottom: 3px solid rgba(0,0,0,.1);
 		border-radius: 10px;
 		padding: 2%;
-		margin-bottom: 15px;
+		margin-bottom: 40px;
 
 		@media screen and (min-width: $tabwidth) {
 			width: 45%;
 		}
 		@media screen and (min-width: $deskwidth) {
-			width: 30%;
+			width: 31%;
 		}
 		p {
 			font: {
