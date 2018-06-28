@@ -1267,12 +1267,12 @@ a:hover,a:focus,a:active{color:midnightblue}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
 .mobile-center{text-align:center}
-.main-navigation{clear:both;display:block;width:100%;text-align:center}
-@media screen and (min-width:600px){.main-navigation{width:auto;display:inline-block;clear:none;margin:20px auto 0 auto}
-}@media screen and (min-width:810px){.main-navigation{float:right;text-align:right;margin:20px 0 0 0}
-}.main-navigation ul{list-style:none;display:none;margin:0;padding-left:0;background-color:#eee;overflow:hidden}
+.main-navigation{clear:both;display:block;background-color:#eee;width:100%;text-align:center}
+@media screen and (min-width:600px){.main-navigation{display:inline-block;margin:20px auto 0 auto}
+}@media screen and (min-width:810px){.main-navigation{margin:20px 0 0 0}
+}.main-navigation ul{list-style:none;display:none;margin:0;padding-left:0;background-color:#eee;overflow:hidden;width:100%}
 @media screen and (min-width:600px){.main-navigation ul{background-color:transparent;float:left;overflow:visible}
-}@media screen and (min-width:600px){.main-navigation ul ul{background-color:#a83135;float:left;position:absolute;top:3em;left:-999em;z-index:99999;border:1px solid #a83135}
+}@media screen and (min-width:600px){.main-navigation ul ul{background-color:#a83135;float:left;position:absolute;top:3em;left:-999em;z-index:99999;width:250px;border:1px solid #a83135}
 }.main-navigation ul ul ul{left:-999em;top:0}
 .main-navigation ul ul li{line-height:1.5;margin:0 0 5px 0;font-size:14px;border-bottom:0}
 @media screen and (min-width:600px){.main-navigation ul ul li{font-size:16px;text-align:left;margin:0}
@@ -1280,9 +1280,9 @@ a:hover,a:active{outline:0}
 @media screen and (min-width:600px){.main-navigation ul ul a{width:250px;padding:10px 10px;color:#fff}
 }.main-navigation ul ul :hover>a,.main-navigation ul ul .focus>a{color:#a83135;background-color:#fff}
 .main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
-.main-navigation li{float:left;position:relative;width:100%;margin:0;line-height:3;border-bottom:3px solid #fff;font-family:"Karla",sans-serif;font-size:20px;font-weight:bold}
-@media screen and (min-width:600px){.main-navigation li{width:auto;margin:0 0 0 20px;font-size:18px;border-bottom:0}
-}@media screen and (min-width:1200px){.main-navigation li{font-size:18px}
+.main-navigation li{display:inline-block;position:relative;width:100%;margin:0;line-height:3;border-bottom:3px solid #fff;font-family:"Karla",sans-serif;font-size:20px;font-weight:bold}
+@media screen and (min-width:600px){.main-navigation li{width:auto;margin:0 10px;font-size:18px;border-bottom:0}
+}@media screen and (min-width:1200px){.main-navigation li{font-size:18px;margin:0 20px}
 }.main-navigation li:hover>a,.main-navigation li.focus>a{color:#a83135}
 .main-navigation a{display:block;text-decoration:none;color:#000;text-decoration:none;-webkit-transition:all .3s ease;transition:all .3s ease}
 .menu-toggle,.main-navigation.toggled ul{display:block}
@@ -1392,6 +1392,9 @@ div{-ms-hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;hyphens:none}
 .wrapper{width:100%;margin:0 auto;padding:20px}
 @media screen and (min-width:600px){.wrapper{width:100%}
 }@media screen and (min-width:1200px){.wrapper{width:90%;padding:0}
+}.nav-wrapper{width:100%;margin:0 auto;padding:20px}
+@media screen and (min-width:600px){.nav-wrapper{width:100%;padding:0}
+}@media screen and (min-width:1200px){.nav-wrapper{width:90%;padding:0}
 }.page-title{width:100%;float:left;padding:20px 0;margin:0 0 30px 0;border-top:2px solid #a83135;background-color:rgba(0,0,0,0.05)}
 .content-area{width:100%;margin:0 auto}
 @media screen and (min-width:600px){.content-area{width:66%;float:right;margin:0}
@@ -1406,7 +1409,7 @@ div{-ms-hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;hyphens:none}
 .logo a,h1.logo a{width:230px;height:97px;display:block;text-indent:-9000px}
 @media screen and (min-width:600px){.logo a,h1.logo a{width:230px;height:97px}
 }@media screen and (min-width:1200px){}
-header.site-header{width:100%;padding:20px 0;float:left}
+header.site-header{width:100%;padding:20px 0 0 0;float:left}
 .header-right{width:100%}
 @media screen and (min-width:810px){.header-right{width:70%;float:right;margin:0}
 }.header-right .site-desc{padding:30px 0;color:#a83135;font-size:20px;text-align:center}

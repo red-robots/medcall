@@ -30,6 +30,20 @@ div {
 		padding: 0px;
 	}
 }
+.nav-wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+		padding: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 90%;
+		padding: 0px;
+	}
+}
 .page-title {
 	width: 100%;
 	float: left;
@@ -116,7 +130,7 @@ div {
 }
 header.site-header {
 	width: 100%;
-	padding: 20px 0;
+	padding: 20px 0 0 0;
 	float: left;
 }
 .header-right {

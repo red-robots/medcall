@@ -4,19 +4,19 @@
 .main-navigation {
 	clear: both;
 	display: block;
-	
+	background-color: #eee;
 	width: 100%;
 	text-align: center;
 
 	@media screen and (min-width: $tabwidth) {
-		width: auto;
+		// width: auto;
 		display: inline-block;
-		clear: none;
+		// clear: none;
 		margin: 20px auto 0 auto;
 	}
 	@media screen and (min-width: $smallwidth) {
-		float: right;
-		text-align: right;
+		// float: right;
+		// text-align: right;
 		margin: 20px 0 0 0;
 	}
 	@media screen and (min-width: $deskwidth) {
@@ -30,6 +30,7 @@
 		padding-left: 0;
 		background-color: #eee;
 		overflow: hidden;
+		width: 100%;
 		@media screen and (min-width: $tabwidth) {
 			background-color: rgba(0,0,0,0);
 			float: left;
@@ -47,6 +48,7 @@
 				top: 3em;
 				left: -999em;
 				z-index: 99999;
+				width: 250px;
 				border: 1px solid $color-red;
 			}
 
@@ -67,6 +69,7 @@
 					font-size: 16px;
 					text-align: left;
 					margin: 0;
+
 				}
 
 				&:hover > ul,
@@ -101,7 +104,8 @@
 		}
 	}
 	li {
-		float: left;
+		// float: left;
+		display: inline-block;
 		position: relative;
 		width: 100%;
 		margin: 0px 0;
@@ -114,12 +118,13 @@
 		}
 		@media screen and (min-width: $tabwidth) {
 			width: auto;
-			margin: 0 0 0 20px;
+			margin:0 10px;
 			font-size: 18px;
 			border-bottom: 0;
 		}
 		@media screen and (min-width: $deskwidth) {
 			font-size: 18px;
+			margin:0 20px;
 		}
 
 		&:hover > a,

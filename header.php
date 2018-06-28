@@ -59,16 +59,20 @@
 	        		<?php bloginfo('description'); ?>
 	        	</div>
 
-				<div class="mobile-center">
-					<nav id="site-navigation" class="main-navigation" role="navigation">
+				
+
+			</div><!-- header right -->
+		</div><!-- wrapper -->
+			<div class="mobile-center">
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<div class="nav-wrapper">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav><!-- #site-navigation -->
 				</div>
+			</div>
 
-			</div><!-- header right -->
-
-	</div><!-- wrapper -->
+	
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content ">
