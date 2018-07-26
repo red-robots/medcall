@@ -79,13 +79,16 @@ section.help {
 		margin: 0 0 15px 0;
 	}
 }
+.centered-boxes {
+	text-align: center;
+}
 .out-link {
 	width: 100%;
 	margin: 0 0 30px 0;
 	@media screen and (min-width: $tabwidth) {
 		width: 29%;
 		margin: 2%;
-		float: left;
+		display: inline-block;
 	}
 	a {
 		background: {

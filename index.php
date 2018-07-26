@@ -64,13 +64,13 @@ get_header(); ?>
 			</section><!-- hero -->
 
 			<section class="help grey">	
-				<div class="small-wrapper">
+				<div class="small-wrapper centered-boxes">
 					<h2><?php echo $title_help; ?></h2>
 					<p><?php echo $text_help; ?></p>
-					<div class="out-link offshore">
-						<!-- <a href="<?php echo $offshore_link; ?>">MedCall <span class="red">Offshore</span></a> -->
+					<!-- <div class="out-link offshore">
+						<a href="<?php echo $offshore_link; ?>">MedCall <span class="red">Offshore</span></a>
 						<a href="<?php echo $offshore_link; ?>">MedCall Offshore</a>
-					</div>
+					</div> -->
 					<div class="out-link comp">
 						<!-- <a href="<?php echo $assist_link; ?>">MedCall <span class="red">Comp</span></a> -->
 						<a href="<?php echo $assist_link; ?>">MedCall Comp</a>
