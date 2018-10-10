@@ -86,7 +86,7 @@ if ( has_post_thumbnail() ) {
 	<?php } 
 
 		if( $video ) { ?>
-		<div class="embed-container">
+		<div class="side-video">
 			<?php the_field('side_video'); ?>
 		</div>
 		<?php }
