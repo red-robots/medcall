@@ -38,7 +38,11 @@ if ( has_post_thumbnail() ) {
 		<main id="main" class="site-main" role="main">
 
 			<?php
-			while ( have_posts() ) : the_post(); ?>
+			while ( have_posts() ) : the_post(); 
+
+				$video = get_field('side_video');
+
+			?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="entry-content">
@@ -55,9 +59,11 @@ if ( has_post_thumbnail() ) {
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<aside id="secondary" class="widget-area" role="complementary">
 	<?php
+
 	if ( has_post_thumbnail() ) { ?>
-		<aside id="secondary" class="widget-area" role="complementary">
+		
 			<div class="side-image">
 				<?php the_post_thumbnail('full') ?>
 			</div>
@@ -75,9 +81,18 @@ if ( has_post_thumbnail() ) {
 			        <?php endforeach; ?>
 			   
 			<?php endif; ?>
-		</aside>
+		
 
-	<?php } ?>
+	<?php } 
+
+		if( $video ) { ?>
+		<div class="embed-container">
+			<?php the_field('oembed'); ?>
+		</div>
+		<?php }
+
+	?>
+	</aside>
 </div>
 </div><!-- page -->
 
