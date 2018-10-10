@@ -1425,7 +1425,7 @@ footer.site-footer section.creds{width:100%;clear:both;margin:10px auto 20px aut
 }.red-button{width:auto;display:inline-block;line-height:1;font-size:18px}
 .red-button a{background-color:#a83135;color:#fff;padding:15px 25px;display:block;text-decoration:none;-webkit-transition:all ease .3s;transition:all ease .3s}
 .red-button a:hover{background-color:rgba(168,49,53,0.5)}
-.side-video{width:100%;margin:5px 0;position:relative}
+.side-video{width:100%;margin:5px 0;position:relative;clear:both}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
