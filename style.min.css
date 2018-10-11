@@ -1425,7 +1425,7 @@ footer.site-footer section.creds{width:100%;clear:both;margin:10px auto 20px aut
 }.red-button{width:auto;display:inline-block;line-height:1;font-size:18px}
 .red-button a{background-color:#a83135;color:#fff;padding:15px 25px;display:block;text-decoration:none;-webkit-transition:all ease .3s;transition:all ease .3s}
 .red-button a:hover{background-color:rgba(168,49,53,0.5)}
-.right-page,.right-page{margin-bottom:30px}
+.left-page,.right-page{margin-bottom:30px}
 .right-page{width:100%;float:right}
 @media screen and (min-width:600px){.right-page{width:45%}
 }.left-page{width:100%;float:left}
